@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Cart from './Cart/cart';
+import Cart from './Carts/Cart';
 import { Link } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 import miniBrand from '../assets/mini_brand_white.png';

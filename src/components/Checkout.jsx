@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import Layout from './Layout';
 import Form from 'react-bootstrap/Form';
-import CartItems from './Cart/CartItems';
+import CartItems from './Carts/CartItems';
 import Badge from 'react-bootstrap/Badge';
 import { removeFromCart, clearCart, addToCart } from '../redux/actions/cartActions';
 import Button from 'react-bootstrap/Button';
