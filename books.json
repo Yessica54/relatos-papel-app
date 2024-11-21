@@ -1,0 +1,580 @@
+
+{
+    "status": "success",
+    "message": null,
+    "data": {
+        "items": [
+            {   
+                "id": 1,
+                "title": "the lord of the rings",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "J.R.R. Tolkien"
+                    } 
+                ],
+                "publication_date": "07-10-2013",
+                "category": "Ciencia",
+                "ISBN": "1402516274",
+                "status": "activo",
+                "range": 1,
+                "availability": 10,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/1402516274-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 127,
+                "title": "Harry Potter and the Philosopher's Stone",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "J.K. Rowling"
+                    }
+                ],
+                "publication_date": "1997",
+                "category": "Fantasía",
+                "ISBN": "9780747532743",
+                "status": "activo",
+                "range": 1,
+                "availability": 10,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780747532743-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 2,
+                "title": "Harry Potter and the Chamber of Secrets",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "J.K. Rowling"
+                    }
+                ],
+                "publication_date": "1998",
+                "category": "Fantasía",
+                "ISBN": "9780747538486",
+                "status": "activo",
+                "range": 1,
+                "availability": 8,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780747538486-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 3,
+                "title": "Pride and Prejudice",
+                "authors": [
+                    {
+                        "id": 2,
+                        "name": "Jane Austen"
+                    }
+                ],
+                "publication_date": "1813-01-28",
+                "category": "Ficción",
+                "ISBN": 9781509896370,
+                "status": "activo",
+                "range": 1,
+                "availability": 10,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9781509896370-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 4,
+                "title": "A Brief History of Time",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "Stephen Hawking"
+                    }
+                ],
+                "publication_date": "1988-03-01",
+                "category": "Popular Science",
+                "ISBN": "9780553380163",
+                "status": "activo",
+                "range": 1,
+                "availability": 7,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 5,
+                "title": "The Universe in a Nutshell",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "Stephen Hawking"
+                    }
+                ],
+                "publication_date": "2001-11-06",
+                "category": "Popular Science",
+                "ISBN": "9780553802023",
+                "status": "activo",
+                "range": 2,
+                "availability": 3,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780553802023-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 6,
+                "title": "Brief Answers to the Big Questions",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "Stephen Hawking"
+                    }
+                ],
+                "publication_date": "2018-10-16",
+                "category": "Popular Science",
+                "ISBN": "9781473695986",
+                "status": "activo",
+                "range": 2,
+                "availability": 5,
+                "date_created": "10-10-2024",
+                "date_update": "10-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9781473695986-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 7,
+                "title": "The Tale of Peter Rabbit",
+                "authors": [
+                    {
+                        "id": 7,
+                        "name": "Beatrix Potter"
+                    }
+                ],
+                "publication_date": "10-04-1902",
+                "category": "Children's Fiction",
+                "ISBN": "9780723247708",
+                "status": "activo",
+                "range": 1,
+                "availability": 5,
+                "date_created": "11-10-2024",
+                "date_update": "11-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780723247708-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 8,
+                "title": "Charlotte's Web",
+                "authors": [
+                    {
+                        "id": 8,
+                        "name": "E.B. White"
+                    }
+                ],
+                "publication_date": "15-10-1952",
+                "category": "Children's Fiction",
+                "ISBN": "9780064400558",
+                "status": "activo",
+                "range": 1,
+                "availability": 8,
+                "date_created": "11-10-2024",
+                "date_update": "11-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780064400558-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 9,
+                "title": "Where the Wild Things Are",
+                "authors": [
+                    {
+                        "id": 9,
+                        "name": "Maurice Sendak"
+                    }
+                ],
+                "publication_date": "09-11-1963",
+                "category": "Children's Fiction",
+                "ISBN": "9780060254926",
+                "status": "activo",
+                "range": 1,
+                "availability": 7,
+                "date_created": "11-10-2024",
+                "date_update": "11-10-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780060254926-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 10,
+                "title": "The Power of Now",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "Eckhart Tolle"
+                    }
+                ],
+                "publication_date": "1997-10-06",
+                "category": "Self-Help",
+                "ISBN": "1577314808",
+                "status": "activo",
+                "range": 2,
+                "availability": 8,
+                "date_created": "2024-11-13",
+                "date_update": "2024-11-13",
+                "cover": "https://covers.openlibrary.org/b/isbn/1577314808-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 11,
+                "title": "You Are a Badass",
+                "authors": [
+                    {
+                        "id": 2,
+                        "name": "Jen Sincero"
+                    }
+                ],
+                "publication_date": "2013-04-23",
+                "category": "Self-Help",
+                "ISBN": "0762447699",
+                "status": "activo",
+                "range": 1,
+                "availability": 5,
+                "date_created": "2024-11-13",
+                "date_update": "2024-11-13",
+                "cover": "https://covers.openlibrary.org/b/isbn/0762447699-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 12,
+                "title": "Atomic Habits",
+                "authors": [
+                    {
+                        "id": 3,
+                        "name": "James Clear"
+                    }
+                ],
+                "publication_date": "2018-10-16",
+                "category": "Self-Help",
+                "ISBN": "0735211299",
+                "status": "activo",
+                "range": 3,
+                "availability": 12,
+                "date_created": "2024-11-13",
+                "date_update": "2024-11-13",
+                "cover": "https://covers.openlibrary.org/b/isbn/0735211299-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 13,
+                "title": "The Subtle Art of Not Giving a F*ck",
+                "authors": [
+                    {
+                        "id": 4,
+                        "name": "Mark Manson"
+                    }
+                ],
+                "publication_date": "2016-09-13",
+                "category": "Self-Help",
+                "ISBN": "0062457713",
+                "status": "activo",
+                "range": 2,
+                "availability": 7,
+                "date_created": "2024-11-13",
+                "date_update": "2024-11-13",
+                "cover": "https://covers.openlibrary.org/b/isbn/0062457713-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 14,
+                "title": "Clara Barton: I Want to Help!",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "Cathy East Dubowski"
+                    }
+                ],
+                "publication_date": "1999-05-01",
+                "category": "Biografías",
+                "ISBN": "9780679872010",
+                "status": "activo",
+                "range": 1,
+                "availability": 10,
+                "date_created": "10-11-2024",
+                "date_update": "10-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780679872010-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 15,
+                "title": "Joni",
+                "authors": [
+                    {
+                        "id": 2,
+                        "name": "Joni Eareckson Tada"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Joe Musser"
+                    }
+                ],
+                "publication_date": "1976-01-01",
+                "category": "Biografías",
+                "ISBN": "9780310273415",
+                "status": "activo",
+                "range": 2,
+                "availability": 8,
+                "date_created": "10-11-2024",
+                "date_update": "10-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780310273415-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 16,
+                "title": "The Diary of Anne Frank",
+                "authors": [
+                    {
+                        "id": 4,
+                        "name": "Anne Frank"
+                    }
+                ],
+                "publication_date": "1952-06-25",
+                "category": "Biografías",
+                "ISBN": "9780553296983",
+                "status": "activo",
+                "range": 3,
+                "availability": 5,
+                "date_created": "10-11-2024",
+                "date_update": "10-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780553296983-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 17,
+                "title": "To Kill a Mockingbird",
+                "authors": [
+                    {
+                        "id": 1,
+                        "name": "Harper Lee"
+                    }
+                ],
+                "publication_date": "11-07-1960",
+                "category": "Clásicos",
+                "ISBN": "9780060935467",
+                "status": "activo",
+                "range": 1,
+                "availability": 8,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780060935467-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 18,
+                "title": "A Brief History of Time",
+                "authors": [
+                    {
+                        "id": 2,
+                        "name": "Stephen Hawking"
+                    }
+                ],
+                "publication_date": "01-04-1988",
+                "category": "Ciencia",
+                "ISBN": "9780553380163",
+                "status": "activo",
+                "range": 2,
+                "availability": 12,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 19,
+                "title": "Pride and Prejudice",
+                "authors": [
+                    {
+                        "id": 3,
+                        "name": "Jane Austen"
+                    }
+                ],
+                "publication_date": "28-01-1813",
+                "category": "Romance",
+                "ISBN": "9780141199078",
+                "status": "activo",
+                "range": 1,
+                "availability": 15,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780141199078-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 20,
+                "title": "Becoming",
+                "authors": [
+                    {
+                        "id": 4,
+                        "name": "Michelle Obama"
+                    }
+                ],
+                "publication_date": "13-11-2018",
+                "category": "Biografía",
+                "ISBN": "9781524763138",
+                "status": "activo",
+                "range": 3,
+                "availability": 10,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9781524763138-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 21,
+                "title": "The Catcher in the Rye",
+                "authors": [
+                    {
+                        "id": 5,
+                        "name": "J.D. Salinger"
+                    }
+                ],
+                "publication_date": "16-07-1951",
+                "category": "Ficción",
+                "ISBN": "9780316769174",
+                "status": "activo",
+                "range": 2,
+                "availability": 5,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780316769174-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 22,
+                "title": "1984",
+                "authors": [
+                    {
+                        "id": 6,
+                        "name": "George Orwell"
+                    }
+                ],
+                "publication_date": "08-06-1949",
+                "category": "Distopía",
+                "ISBN": "9780451524935",
+                "status": "activo",
+                "range": 1,
+                "availability": 9,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 23,
+                "title": "Sapiens: A Brief History of Humankind",
+                "authors": [
+                    {
+                        "id": 7,
+                        "name": "Yuval Noah Harari"
+                    }
+                ],
+                "publication_date": "04-09-2014",
+                "category": "Historia",
+                "ISBN": "9780062316097",
+                "status": "activo",
+                "range": 4,
+                "availability": 6,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 24,
+                "title": "The Art of War",
+                "authors": [
+                    {
+                        "id": 8,
+                        "name": "Sun Tzu"
+                    }
+                ],
+                "publication_date": "06-11-1972",
+                "category": "Filosofía",
+                "ISBN": "9781599869773",
+                "status": "activo",
+                "range": 2,
+                "availability": 11,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9781599869773-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 25,
+                "title": "Harry Potter and the Sorcerer's Stone",
+                "authors": [
+                    {
+                        "id": 9,
+                        "name": "J.K. Rowling"
+                    }
+                ],
+                "publication_date": "01-09-1998",
+                "category": "Fantasía",
+                "ISBN": "9780590353427",
+                "status": "activo",
+                "range": 3,
+                "availability": 20,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            },
+            {
+                "id": 26,
+                "title": "The Great Gatsby",
+                "authors": [
+                    {
+                        "id": 10,
+                        "name": "F. Scott Fitzgerald"
+                    }
+                ],
+                "publication_date": "10-04-1925",
+                "category": "Drama",
+                "ISBN": "9780743273565",
+                "status": "activo",
+                "range": 1,
+                "availability": 7,
+                "date_created": "13-11-2024",
+                "date_update": "13-11-2024",
+                "cover": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+                "price": 20,
+                "currency": "USD"
+            }
+        ]
+    }
+}
