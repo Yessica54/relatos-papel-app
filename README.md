@@ -12,7 +12,7 @@ Requires Node.js v23+ to run.
 
 Install the dependencies and devDependencies and start the server dev.
 
-```bash
+```bash 
   npm install && npm run dev
 ```
 
