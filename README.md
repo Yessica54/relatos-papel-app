@@ -16,6 +16,12 @@ Install the dependencies and devDependencies and start the server dev.
   npm install && npm run dev
 ```
 
+Generate dist for production
+
+```bash 
+  npm install && npm run build
+```
+
 
 ## Features
 
