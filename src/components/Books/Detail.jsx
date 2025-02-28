@@ -14,13 +14,12 @@ const Detail = ({products, addToCart}) => {
     const [error, setError] = useState();
 
     useEffect(() => {
-        fetch("../books.json")
+        fetch("http://localhost:8081/books/"+id)
             .then((res) => {
                 return res.json();
             })
             .then((data) => {
-                console.log(data.data)
-                setBook(data.data.items.find((book) => book.id == id));
+                setBook(data);
             })
             .catch((err) => {
                 setError(err.message);
@@ -43,10 +42,8 @@ const Detail = ({products, addToCart}) => {
                             </div>
                             <div className="d-flex justify-content-between">
                                 <div className="p-2">Fecha de Publicacion: <p>{book.publication_date}</p></div>
-                                <div className="p-2">Autores: 
-                                    {book.authors?.map((author) => (
-                                        <p key={`author-${author.id}`}>{author.name}</p>
-                                    ))}
+                                <div className="p-2">Autor: 
+                                    <p>{book.author}</p>
                                 </div>
                                 <div className="p-2">Categoria:
                                     <p>{book.category}</p>

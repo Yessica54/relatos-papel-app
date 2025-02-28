@@ -9,9 +9,6 @@ const BookList = ({ books }) => {
     return (
         <div className='row row-cols-1 row-cols-md-4 g-3'>
             {books.map((book) => {
-                if (book.status != "activo") {
-                    return null;
-                }
                 return (
                     <div key={book.id}  className='col d-flex justify-content-center'>
                         <Link to={`/book/${book.id}`} className='text-decoration-none'>

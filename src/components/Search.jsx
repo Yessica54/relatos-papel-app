@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
+import Accordion from 'react-bootstrap/Accordion';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
-const Search = ({ searchBooks }) => {
+const Search = ({ searchBooks, aggs }) => {
     const [search, setSearch] = useState('');
-
+    console.log("Category Aggregation", aggs['Category Aggregation'])
     const handleSubmit = (e) => {
         e.preventDefault();
         searchBooks(search);
@@ -26,6 +28,41 @@ const Search = ({ searchBooks }) => {
                     Buscar
                 </Button>
             </InputGroup>
+            <Accordion>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>Busqueda Avanzada</Accordion.Header>
+                    <Accordion.Body>
+                        <Form.Group className="mb-3" controlId="">
+                            <Form.Control type="text" placeholder="ISBN" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="">
+                            <Form.Control type="text" placeholder="Author" />
+                        </Form.Group>
+                        <InputGroup className="mb-3">
+                            <Button variant="outline-secondary" id="button-addon1">
+                            Button
+                            </Button>
+                            <Button variant="outline-secondary" id="button-addon1">
+                            Button
+                            </Button>
+                            <Button variant="outline-secondary" id="button-addon1">
+                            Button
+                            </Button>
+                        </InputGroup>
+                        <InputGroup className="mb-3">
+                            <Button variant="outline-secondary" id="button-addon1">
+                            Button
+                            </Button>
+                            <Button variant="outline-secondary" id="button-addon1">
+                            Button
+                            </Button>
+                            <Button variant="outline-secondary" id="button-addon1">
+                            Button
+                            </Button>
+                        </InputGroup>
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
         </Form>
     );
   }

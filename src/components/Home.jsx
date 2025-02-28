@@ -11,55 +11,69 @@ import Button from 'react-bootstrap/Button';
 const Home = () => { 
 
     const [books, setBooks] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
+    const [aggs, setAggs] = useState([]);
     const [error, setError] = useState();
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 8; // Número de elementos por página
-
-    // Calcular el índice de los elementos para la página actual
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
-
-    // Cambiar de página
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+    const [totalPages, setTotalPages] = useState(10);
     const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
 
     useEffect(() => {
-        fetch("books.json")
+        getData("","","","","","","", 1);
+    }, []);
+  
+    const getData = (title, ISBN, author, range, availability, priceValues,currencyValues,page) => {
+
+        let paramQuery = {page: page-1}
+      
+        if (title != "") {
+            paramQuery["title"] = title
+        }
+        if (ISBN != "") {
+            paramQuery["ISBN"] = ISBN
+        }
+        if (author != "") {
+            paramQuery["author"] = author
+        }
+        if (range != "") {
+            paramQuery["range"] = range
+        }
+        if (availability != "") {
+            paramQuery["availability"] = availability
+        }
+        if (priceValues != "") {
+            paramQuery["range_price"] = priceValues
+        }
+        if (currencyValues != "") {
+            paramQuery["currencies"] = currencyValues
+        }
+        const params = new URLSearchParams(paramQuery).toString();
+
+        fetch(`http://localhost:8081/books?${params}`)
             .then((res) => {
-                console.log(res)
+                if (!res.ok) {
+                    throw new Error("Failed to fetch books");
+                }
                 return res.json();
             })
             .then((data) => {
-                setBooks(data.data.items);
-                setFilteredData(data.data.items)
+                console.log(data.books.content)
+                setBooks(data.books.content);
+                setAggs(data.aggs);
+                setTotalPages(data.books.totalPages);
             })
             .catch((err) => {
                 console.log(err)
                 setError(err.message);
             });
-        }, []);
-         
+    }
+
     const searchBooks = (term) => {
         setCurrentPage(1);
         if(term != ""){
-            return setFilteredData(
-                books.filter( (books) => {
-                        const authorFind = books.authors.some((autor) =>
-                            autor.name.toLowerCase().includes(term)
-                        ); 
-                        return (
-                            books.title.toLowerCase().includes(term) 
-                            || books.category.toLowerCase().includes(term)
-                            || authorFind
-                        )
-                    }  
-                )
-            )
+            return getData(term,"","","","","","", currentPage);
         }
-        return setFilteredData(books)
+        return getData("","","","","","","", 1);
     }
 
     return (   
@@ -67,11 +81,11 @@ const Home = () => {
             <div className='px-4 py-5 my-5 text-center text-bg-dark'>
                 <Image src={logo}></Image>
                 <div className='col-lg-6 mx-auto mb-4 mt-5'>
-                    <Search searchBooks={searchBooks}/>
+                    <Search searchBooks={searchBooks} aggs={aggs}/>
                 </div>
             </div>
             <Container className='container'>
-                <BookList books={currentItems}/>
+                <BookList books={books}/>
                 <div className='col d-flex justify-content-center'>
                     <nav>
                         <ul className="pagination mt-3">
