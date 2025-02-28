@@ -73,6 +73,7 @@ const Search = ({ searchBooks, aggs }) => {
                                     onChange={handleCategoryChange}
                                     value={category.key}
                                     id={`inline-${category.key}`}
+                                    key={`${category.key}`}
                                 />
                             ))}
                         </div>
@@ -88,6 +89,7 @@ const Search = ({ searchBooks, aggs }) => {
                                     value={price.key}
                                     onChange={handlePriceChange}
                                     id={`inline-${price.key}`}
+                                    key={`${price.key}`}
                                 />
                             ))}
                         </div>
