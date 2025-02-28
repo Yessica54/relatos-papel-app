@@ -14,7 +14,7 @@ const Detail = ({products, addToCart}) => {
     const [error, setError] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:8081/books/"+id)
+        fetch("http://localhost:8080/ms-books-catalogue/books/"+id)
             .then((res) => {
                 return res.json();
             })
