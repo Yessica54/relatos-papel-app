@@ -19,10 +19,10 @@ const Home = () => {
 
 
     useEffect(() => {
-        getData("","","","","","","", 1);
+        getData("","","","","","","","", 1);
     }, []);
   
-    const getData = (title, ISBN, author, range, availability, priceValues,currencyValues,page) => {
+    const getData = (title,categoriesValues, ISBN, author, range, availability, priceValues,currencyValues,page) => {
 
         let paramQuery = {page: page-1}
       
@@ -41,10 +41,15 @@ const Home = () => {
         if (availability != "") {
             paramQuery["availability"] = availability
         }
-        if (priceValues != "") {
+        if (priceValues.length > 0) {
             paramQuery["range_price"] = priceValues
         }
-        if (currencyValues != "") {
+
+        if (categoriesValues.length > 0) {
+            paramQuery["categories"] = categoriesValues
+        }
+
+        if (currencyValues.length > 0) {
             paramQuery["currencies"] = currencyValues
         }
         const params = new URLSearchParams(paramQuery).toString();
@@ -68,12 +73,10 @@ const Home = () => {
             });
     }
 
-    const searchBooks = (term) => {
+    const searchBooks = (term, ISBN, author, selectedCategories, selectedPrice) => {
         setCurrentPage(1);
-        if(term != ""){
-            return getData(term,"","","","","","", currentPage);
-        }
-        return getData("","","","","","","", 1);
+        console.log(selectedCategories)
+        return getData(term,selectedCategories.join(','),ISBN,author,"","",selectedPrice.join(','),"", currentPage);
     }
 
     return (   

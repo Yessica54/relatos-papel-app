@@ -35,7 +35,7 @@ const Detail = ({products, addToCart}) => {
                             <Image  src={book.cover} className='mb-5 mb-md-0'  />
                             </div>
                         <div className="col-md-6">
-                            <div className="small mb-1">ISBN: {book.ISBN}</div>
+                            <div className="small mb-1">ISBN: {book.isbn}</div>
                             <h1 className="display-5 fw-bolder">{book.title}</h1>
                             <div className="fs-5 mb-5">
                                 <span>${book.price}</span>
