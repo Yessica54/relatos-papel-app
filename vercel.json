@@ -1,5 +1,12 @@
 {
-    "rewrites":  [
-        {"source": "/(.*)", "destination": "/"}
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        },
+        {
+            "source": "/api/books",
+            "destination": "http://ec2-3-135-221-63.us-east-2.compute.amazonaws.com:8080/ms-books-catalogue/books"
+        }
     ]
 }
