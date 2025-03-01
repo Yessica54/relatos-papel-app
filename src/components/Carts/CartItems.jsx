@@ -14,7 +14,7 @@ const CartItems = ({ cartItems, total, addToCart, removeFromCart}) => {
                     </td>
                     <td >
                       <div className='fw-semibold'>{item.title}</div>
-                      <div className='fw-lighter'>{item.authors[0].name}</div>
+                      <div className='fw-lighter'>{item.author}</div>
                       <div>{item.price}$</div>
                     </td>
                     <td className="align-top">
