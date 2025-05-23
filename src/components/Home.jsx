@@ -54,7 +54,7 @@ const Home = () => {
         }
         const params = new URLSearchParams(paramQuery).toString();
 
-        fetch(`http://ec2-3-135-221-63.us-east-2.compute.amazonaws.com:8080/ms-books-catalogue/books?${params}`)
+        fetch(`http://10.0.2.102:8080/ms-books-catalogue/books?${params}`)
             .then((res) => {
                 if (!res.ok) {
                     throw new Error("Failed to fetch books");
